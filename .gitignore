@@ -1,2 +1,60 @@
-
+Java11/*.iml
+.idea
+*.iml
 *.xml
+Java11/.idea/sonarlint/issuestore/0/1/01142b20d1bf46e5dab4d0fcac2c3d54f43dd924
+Java11/.idea/sonarlint/issuestore/6/3/63d521e7f66d678adebf733d1c1c22a320a19697
+Java11/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+Java11/.idea/sonarlint/issuestore/d/1/d1c92366897279414bcda807eac961d01a130386
+Java11/.idea/sonarlint/issuestore/f/9/f9235404db1b50753a0a54da6bc88717e48fcafa
+Java11/.idea/sonarlint/issuestore/index.pb
+Java11/.idea/sonarlint/securityhotspotstore/0/1/01142b20d1bf46e5dab4d0fcac2c3d54f43dd924
+Java11/.idea/sonarlint/securityhotspotstore/6/3/63d521e7f66d678adebf733d1c1c22a320a19697
+Java11/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+Java11/.idea/sonarlint/securityhotspotstore/d/1/d1c92366897279414bcda807eac961d01a130386
+Java11/.idea/sonarlint/securityhotspotstore/f/9/f9235404db1b50753a0a54da6bc88717e48fcafa
+Java11/.idea/sonarlint/securityhotspotstore/index.pb
+JavaFx10/.idea/sonarlint/issuestore/1/d/1d780f26781fc2ad35c5be1d0feb35412f373602
+JavaFx10/.idea/sonarlint/issuestore/2/f/2f3f9bc0becdff9e1d2a48debb870212fb376b56
+JavaFx10/.idea/sonarlint/issuestore/d/0/d09c56c08a8b4e539097ab98f8516c009aa0755d
+JavaFx10/.idea/sonarlint/issuestore/f/8/f84891de375015dbc3259b098070fffaa6c0752c
+JavaFx10/.idea/sonarlint/issuestore/f/9/f9c6c08be2bc5de7b1e25d62f7675c273fa8cb35
+JavaFx10/.idea/sonarlint/issuestore/index.pb
+JavaFx10/.idea/sonarlint/securityhotspotstore/1/d/1d780f26781fc2ad35c5be1d0feb35412f373602
+JavaFx10/.idea/sonarlint/securityhotspotstore/2/f/2f3f9bc0becdff9e1d2a48debb870212fb376b56
+JavaFx10/.idea/sonarlint/securityhotspotstore/d/0/d09c56c08a8b4e539097ab98f8516c009aa0755d
+JavaFx10/.idea/sonarlint/securityhotspotstore/f/8/f84891de375015dbc3259b098070fffaa6c0752c
+JavaFx10/.idea/sonarlint/securityhotspotstore/f/9/f9c6c08be2bc5de7b1e25d62f7675c273fa8cb35
+JavaFx10/.idea/sonarlint/securityhotspotstore/index.pb
+Java11/Java11.iml
+Java11/Java11.iml
+
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store

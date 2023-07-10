@@ -1,0 +1,14 @@
+/* 타입 선택자 Label로 접근 */
+Label{
+    -fx-padding:5; /* 상하좌우 안 여백을 5 */
+}
+
+#id01{
+    -fx-background-color:black;
+    -fx-text-fill:yellow;
+}
+
+.idClass{
+    -fx-background-color:blue;
+    -fx-text-fill:white;
+}
