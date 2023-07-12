@@ -1,0 +1,8 @@
+package thread_01;
+
+public class ThreadTest02 {
+    public static void main(String[] args) {
+        System.out.println(Thread.currentThread());
+            //현재 실행중인 스레드의 이름
+    }
+}
