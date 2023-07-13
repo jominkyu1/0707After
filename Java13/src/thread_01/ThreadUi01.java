@@ -11,6 +11,7 @@ class Thread05 extends Frame implements Runnable{
     public Thread05(){
         setBackground(new Color(49, 77, 136));
         setSize(340, 180);
+        setLocationRelativeTo(null);
         setVisible(true);
 
 
@@ -30,6 +31,7 @@ class Thread05 extends Frame implements Runnable{
         g.setColor(Color.ORANGE);
         g.setFont(new Font("궁서체", Font.BOLD,30 ));
         g.drawString("장마가 시작됩니다.", x, d.height/2);
+        g.drawString(String.valueOf((int)(Math.random()*100)), (int) (d.getWidth()/3), (int) (d.getHeight()-10));
 
         if(d.width<x) x=0;
     }
@@ -44,7 +46,7 @@ class Thread05 extends Frame implements Runnable{
             }
 
             repaint();
-            x+=5;
+            x+=10;
         }
     }
 }
