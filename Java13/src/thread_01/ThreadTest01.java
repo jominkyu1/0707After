@@ -21,5 +21,7 @@ public class ThreadTest01 extends Thread {
 
         th.start();
         th2.start();
+
+
     }
 }

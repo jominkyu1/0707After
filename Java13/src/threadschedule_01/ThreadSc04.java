@@ -54,8 +54,17 @@ class Customer14 implements Runnable{
         while(true){
             try {Thread.sleep(10);} catch (InterruptedException e) {}
             String name = Thread.currentThread().getName();
-        }
 
+            try {
+                if(eatFood()) {
+                    System.out.println(name + " ate a " + food);
+                } else {
+                    System.out.println(name + " failed to eat.");
+                }
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public boolean eatFood() throws InterruptedException {
@@ -63,8 +72,36 @@ class Customer14 implements Runnable{
     }
 }
 
+//요리사 스레드
+class Cook14 implements Runnable{
+    private Table04 table;
+
+    public Cook14(Table04 table){
+        this.table=table;
+    }
+    @Override
+    public void run() {
+        while(true){
+            int idx = (int)(Math.random()*table.dishNum());
+
+            table.add(table.dishNames[idx]); //테이블에 음식추가
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {}
+        }
+    }
+}
+
+
 public class ThreadSc04 {
     public static void main(String[] args) throws InterruptedException {
-        new Table04().remove("AA");
+        Table04 table = new Table04();
+        new Thread(new Cook14(table), "cook").start(); //요리사클래스에서 랜덤한 인덱스 요리 생성 (dishNames 중)
+        
+        new Thread((new Customer14(table, "donut")), "customer 01").start();
+        new Thread(new Customer14(table, "burger"), "customer 02").start();
+
+        Thread.sleep(5000);
+        System.exit(0); //계속 기다리는것을 방지하기위해 5초뒤 종료
     }
 }
