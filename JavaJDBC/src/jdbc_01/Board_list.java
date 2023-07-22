@@ -3,13 +3,15 @@ package jdbc_01;
 import net.daum.dao.BoardDAOImp1;
 import net.daum.vo.BoardVO;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
 import java.util.List;
 
 public class Board_list {
     public static void main(String[] args) {
         BoardDAOImp1 bdao = new BoardDAOImp1();
         List<BoardVO> blist = bdao.getBoardList();
-        System.out.println("레코드 개수: " + blist.size());
+        System.out.println("레코드 개수: " + blist.size() + "\n\n");
 
         for(BoardVO b :blist){
             System.out.print(b.getBno());
