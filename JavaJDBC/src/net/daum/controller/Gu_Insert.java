@@ -1,78 +1,8 @@
 package net.daum.controller;
 
-import net.daum.dao.GuDAOImp1;
-import net.daum.vo.GuVO;
-
-import javax.swing.*;
-import java.awt.*;
-import java.util.Scanner;
-
-class Gu_Frame extends JFrame{
-    JPanel jp = new JPanel();
-    JButton jb = new JButton("확인");
-    JTextField gname = new JTextField("글쓴이");
-    JTextField gtitle = new JTextField("글제목");
-    JTextField gcont = new JTextField("글내용");
-    GuVO gv = new GuVO();
-    GuDAOImp1 gdi = new GuDAOImp1();
-    int result = -1;
-
-    Gu_Frame(){
-        setTitle("DB Insert");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
-        setLocationRelativeTo(null);
-        setResizable(false);
-
-        jp.setLayout(new GridLayout(4,1));
-        jp.add(gname);
-        jp.add(gtitle);
-        jp.add(gcont);
-        jp.add(jb);
-
-        add(jp);
-        setVisible(true);
-
-        jb.addActionListener(e -> {
-            gv.setGname(gname.getText());
-            gv.setGtitle(gtitle.getText());
-            gv.setGcont(gcont.getText());
-
-            result = gdi.insertGu(gv);
-            
-            if(result==1){
-                JOptionPane.showMessageDialog(null, "Insert 완료");
-                gname.setText(null);
-                gtitle.setText(null);
-                gcont.setText(null);
-            }else {
-                JOptionPane.showMessageDialog(null, "Insert 실패");
-            }
-        });
-    }
-}
 public class Gu_Insert{
     public static void main(String[] args) {
-        new Gu_Frame();
-//        Scanner sc = new Scanner(System.in);
-//        GuDAOImp1 gd = new GuDAOImp1();
-//        GuVO gv = new GuVO();
-//
-//        System.out.print("글쓴이>> ");
-//        gv.setGname(sc.nextLine());
-//
-//        System.out.print("글제목>> ");
-//        gv.setGtitle(sc.nextLine());
-//
-//        System.out.print("글내용>> ");
-//        gv.setGcont(sc.nextLine());
-//
-//        int result = gd.insertGu(gv);
-//
-//        if (result==1) System.out.println("Insert 완료");
-//        else System.out.println("Insert 실패");
-//
-//        sc.close();
+        new GuFrame();
     }
 }
 
