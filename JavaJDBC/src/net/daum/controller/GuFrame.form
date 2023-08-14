@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="net.daum.controller.GuFrame">
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="31" y="21" width="523" height="245"/>
+      <xy x="31" y="21" width="504" height="245"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -22,6 +22,12 @@
                 <properties>
                   <label value="확인"/>
                   <text value="확인"/>
+                </properties>
+              </component>
+              <component id="638d2" class="javax.swing.JButton" binding="btnList">
+                <constraints/>
+                <properties>
+                  <text value="리스트"/>
                 </properties>
               </component>
             </children>

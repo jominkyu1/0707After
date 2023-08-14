@@ -16,6 +16,7 @@ public class GuFrame extends JFrame{
     private JTextField gname;
     private JTextField gtitle;
     private JTextArea gcont;
+    private JButton btnList;
     GuVO gv = new GuVO();
     GuDAOImp1 gdi = new GuDAOImp1();
     int result = -1;
@@ -53,6 +54,9 @@ public class GuFrame extends JFrame{
                     }
                 }
             }
+        });
+        btnList.addActionListener(e -> {
+            new GuFrameList();
         });
     }
 }
